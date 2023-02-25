@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 3rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+header,
+footer {
+  padding: 1rem;
+  background-color: gray;
+}
+.content {
+  padding: 1rem;
+  background-color: orange;
+}
+aside {
+  padding: 1rem;
+  background-color: yellow;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  overflow: hidden;
+}
+
+.content {
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+p {
+  margin-bottom: 0;
+}
